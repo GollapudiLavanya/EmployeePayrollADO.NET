@@ -8,8 +8,7 @@ namespace EmployeePayrollADO.NET
         {
             Console.WriteLine("Employee Payroll Service using ADO.Net");
             EmployeeRepository repository = new EmployeeRepository();
-            EmployeeDetails details = new EmployeeDetails();
-            repository.UpdateSalary(details);
+            repository.RetrieveDataBetweenDateRange();
         }
     }
 }
