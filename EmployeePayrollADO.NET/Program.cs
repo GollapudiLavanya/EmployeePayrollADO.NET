@@ -21,11 +21,11 @@ namespace EmployeePayrollADO.NET
             details.Deductions = 100;
             details.NetPay = 20000;
             details.IncomeTax = 200;
-            bool result = repository.AddEmployee(details);
+            bool result = repository.RemoveEmployee(10);
             if (result)
-                Console.WriteLine("Successfully added");
+                Console.WriteLine("Successfully removed");
             else
-                Console.WriteLine("Not added");
+                Console.WriteLine("Not removed");
         }
     }
 }
