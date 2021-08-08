@@ -13,7 +13,6 @@ namespace EmployeePayrollADO.NET
         public static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=payroll_service;";
         SqlConnection connection = new SqlConnection(connectionString);
 
-
         public void GetAllEmployee()
         {
             try
